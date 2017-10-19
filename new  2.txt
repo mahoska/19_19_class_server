@@ -1,0 +1,4 @@
+ALTER TABLE `order_book` CHANGE `skidka_client` `discount_client` FLOAT NOT NULL DEFAULT '0';
+
+INSERT INTO `statusorder` (`id`, `name`) VALUES (NULL, 'in processing'), (NULL, 'ready to ship');
+INSERT INTO `statusorder` (`id`, `name`) VALUES (NULL, 'send'), (NULL, 'closed');
